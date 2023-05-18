@@ -1,0 +1,32 @@
+/*1.Selector universal*/
+*{
+    color: darkmagenta;
+}
+/*2.Selector tipo elemento*/
+h1{
+    color: blue;
+}
+p{
+    size: 17px;
+}
+/*3.Selector clase*/
+.clase1{
+    color: black;
+}
+/*4.Selector tipo id*/
+#idnombre{
+    color: green;
+}
+/*5.Selector por atributo 1:por selector 2: por atributo*/
+a[href]{
+    color: brown;
+}
+a[href*=".ec"]{
+    color: red;
+}
+/*6.Selecto de pseudo-clase*/
+label:hover{
+    color: dimgray;
+    background-color: coral;
+    font-size: 20px;
+}

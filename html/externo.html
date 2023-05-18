@@ -4,46 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 1</title>
+    <title>Externo</title>
 
-    <!--estiilo interno-->
-    <style>
-        /*1.Selector universal*/
-        *{
-            color: darkmagenta;
-        }
-        /*2.Selector tipo elemento*/
-        h1{
-            color: blue;
-        }
-        p{
-            size: 17px;
-        }
-        /*3.Selector clase*/
-        .clase1{
-            color: black;
-        }
-        /*4.Selector tipo id*/
-        #idnombre{
-            color: green;
-        }
-        /*5.Selector por atributo 1:por selector 2: por atributo*/
-        a[href]{
-            color: brown;
-        }
-        a[href*=".ec"]{
-            color: red;
-        }
-        /*6.Selecto de pseudo-clase*/
-        label:hover{
-            color: dimgray;
-            background-color: coral;
-            font-size: 20px;
-        }
-        /*img[alt*="puede"]{
-        ejemplo de por atributo con otro elemento
-        }*/
-    </style>
+    <link rel="stylesheet" href="../css/externo.css">
 </head>
 <body>
     <header>
@@ -59,15 +22,15 @@
         <h2 id="idtitulogrande">Selector por ID</h2>
 
         <!--alt es un atributo que permite poner texto cuando es imposible renderrizar una imagen-->
-        <img src="./img/cabecera.png" alt="No se pudo cargar la imagen">
+        <img src="../img/cabecera.png" alt="No se pudo cargar la imagen">
     </header>
     <nav>
         <ul>
-            <li style="color: rgb(139, 95, 37);">Cuentas</li>
-            <li style="color: aquamarine;">Tarjetas</li>
-            <li style="color: rgb(87, 100, 37);">Prestamos</li>
-            <li style="color: chartreuse;">Inversiones</li>
-            <li style="color: gray;">Servicios</li>
+            <li>Cuentas</li>
+            <li>Tarjetas</li>
+            <li>Prestamos</li>
+            <li>Inversiones</li>
+            <li>Servicios</li>
 
             <li>
                 <a href="https://www.google.ec/?hl=es">Google</a>
