@@ -1,0 +1,70 @@
+/*combinacion de selector tipo clase(.menu) con tipo elemento(li)*/
+.menu li {
+    color: darkgoldenrod;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid black;
+   /* margin-right: 20px;*/
+   /*Cuando se lo pone asi, se lo pone en sentido horario desde arriba*/
+   /*margin: 10px 20px 30px 50px;*/
+   /*atajo*/
+   /*margin: 20px 10px;*/
+   margin: 5px;
+   padding: 5px;
+   border-radius: 4px;
+   text-align: center;
+}
+.cabecera h1 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: chocolate;
+}
+.menu{
+    background-color: aquamarine;
+    text-align: left;
+}
+
+header, section, footer, aside, nav, article{
+    display: block;
+    color: aliceblue;
+}
+
+body{
+    text-align: center;
+    background-color: dimgray;
+    /*background-image: -webkit-image-set("https://eju.tv/wp-content/uploads/2021/06/img_60bfe1181b49f-1100x733.jpg");*/
+
+}
+.formulario{
+    width: 900px;
+    border: 1px double black;
+    margin:  15px auto;
+}
+.section{
+    margin: 20px;
+    width: 600px;
+    /*para que flote y se separe del contenido*/
+    float: left;
+}
+.article{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: cadetblue;
+}
+/*
+No se debe hacer
+h1 {
+    color: purple;
+}
+h2 {
+    color: purple;
+}
+h3 {
+    color: purple;
+}
+Como se debe hacer
+h1, h2, h3 {
+    color: purple;
+}*/
