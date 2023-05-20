@@ -68,3 +68,28 @@ Como se debe hacer
 h1, h2, h3 {
     color: purple;
 }*/
+
+.referencias{
+    border: 1px solid black;
+    width: 200px;
+    float: left;
+    margin-top: 350px;
+    margin-left: 20px;
+}
+
+/*Lo mismo
+.clasePieArticulo{
+    color: red;
+}*/
+article footer{
+    text-align: right;
+}
+
+.pie{
+    /*siempre en los pie de paginas*/
+    clear: both;
+}
+
+.image{
+    width: 250px;
+}
