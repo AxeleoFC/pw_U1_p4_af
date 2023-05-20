@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1</title>
+
+    <!--estiilo interno-->
+    <style>
+        /*1.Selector universal*/
+        *{
+            color: darkmagenta;
+        }
+        /*2.Selector tipo elemento*/
+        h1{
+            color: blue;
+        }
+        p{
+            size: 17px;
+        }
+        /*3.Selector clase*/
+        .clase1{
+            color: black;
+        }
+        /*4.Selector tipo id*/
+        #idnombre{
+            color: green;
+        }
+        /*5.Selector por atributo 1:por selector 2: por atributo*/
+        a[href]{
+            color: brown;
+        }
+        a[href*=".ec"]{
+            color: red;
+        }
+        /*6.Selecto de pseudo-clase*/
+        label:hover{
+            color: dimgray;
+            background-color: coral;
+            font-size: 20px;
+        }
+        /*img[alt*="puede"]{
+        ejemplo de por atributo con otro elemento
+        }*/
+    </style>
+</head>
+<body>
+    <header>
+        <!--estilo en linea-->
+        <!--<h1 style="color: red;">Banco pichincha</h1>-->
+        
+        <h1 >Banco pichincha</h1>
+        <h6 style="color: springgreen;">Banco pichincha</h6>
+        
+        <h4 class="clase1">Selector Clase1</h4>
+        <h3 class="clase1">Selector Clase2</h3>
+        <h3 class="Clase2">Selector Clase2</h3>
+        <h2 id="idtitulogrande">Selector por ID</h2>
+
+        <!--alt es un atributo que permite poner texto cuando es imposible renderrizar una imagen-->
+        <img src="./img/cabecera.png" alt="No se pudo cargar la imagen">
+    </header>
+    <nav>
+        <ul>
+            <li style="color: rgb(139, 95, 37);">Cuentas</li>
+            <li style="color: aquamarine;">Tarjetas</li>
+            <li style="color: rgb(87, 100, 37);">Prestamos</li>
+            <li style="color: chartreuse;">Inversiones</li>
+            <li style="color: gray;">Servicios</li>
+
+            <li>
+                <a href="https://www.google.ec/?hl=es">Google</a>
+            </li>
+            <li>
+                <a href="https://outlook.live.com/owa/">Hotmail</a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/">Apple</a>
+            </li>
+            <label for="idnombre">Nombre</label>
+            <input id="idnombre" type="text">
+            <label for="idapellido">Apellido</label>
+            <input id="idapellido" type="text">
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>1</h1>
+            <h3>Primer parrafo</h3>
+            <time datetime="12-10-2023">Publicado el 12-10-2023</time>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dicta molestias odio mollitia. Expedita ut quod fugiat! Nostrum pariatur error officiis velit iure dolor aspernatur rem, distinctio sunt cum sint</p>
+            <footer>
+                <p>Comentarios (3)</p>
+            </footer>        
+        </article>
+        <article>
+            <h1>2</h1>
+            <h3>Segundo parrafo</h3>
+            <time datetime="12-10-2023">Publicado el 112-10-2023</time>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed possimus deserunt quam quia a, soluta excepturi, necessitatibus totam quasi minus porro earum molestiae accusamus debitis suscipit ipsam molestias repellendus dolorum omnis reiciendis quas? Harum neque veniam maiores doloremque sed fugiat. ipsum dolor sit amet consectetur adipisicing elit. Atque ratione reiciendis enim consequatur ad, cupiditate ipsum exercitationem impedit quos ipsam accusantium laboriosam dolorem deleniti eligendi vel doloribus? Omnis, doloremque dolorum?</p>
+            <footer>
+                <p>Comentarios (10)</p>
+            </footer>        
+        </article>
+    </section>
+    <aside>
+        <blockquote cite="https://www.pichincha.com/portal/">
+            Referencia 1
+        </blockquote>
+        <blockquote cite="https://www.produbanco.com.ec/">
+            Referencia 2
+        </blockquote>
+    </aside>
+    <footer>
+        Derechos reservados 2022-2023
+    </footer>
+</body>
+</html>
