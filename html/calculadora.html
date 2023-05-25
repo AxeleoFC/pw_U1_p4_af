@@ -5,6 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora JS</title>
+
+    <!--JS interno-->
+    <script>
+
+        function resultado(params) {
+            document.getElementById('labelResultado').innerHTML=document.getElementById('labelResultado').innerHTML+params;
+        }
+        function transformarInt(idCampo) {
+            return parseInt(document.getElementById(idCampo).value)
+        }
+
+        function sumar(num1, num2) {
+            return num1+num2;
+        }
+        function sumarNumeros() {
+            var num1=transformarInt('idNum1');
+            var num2=transformarInt('idNum2');
+            resultado(sumar(num1,num2));
+        }
+
+        function funsion(fun) {
+            var num1=transformarInt('idNum1');
+            var num2=transformarInt('idNum2');
+            resultado(fun(num1,num2));
+        }
+
+        function restar(num1, num2) {
+            return num1-num2;
+        }
+        function restarNumeros() {
+            var num1=transformarInt('idNum1');
+            var num2=transformarInt('idNum2');
+            resultado(restar(num1,num2));
+        }
+        function multiplicar(num1, num2) {
+            return num1*num2;
+        }
+        function multiplicarNumeros() {
+            var num1=transformarInt('idNum1');
+            var num2=transformarInt('idNum2');
+            resultado(multiplicar(num1,num2));
+        }
+        function dividir(num1, num2) {
+            return num1/num2;
+        }
+        function dividirNumeros() {
+            var num1=transformarInt('idNum1');
+            var num2=transformarInt('idNum2');
+            resultado(dividir(num1,num2));
+        }
+    </script>
+
 </head>
 <body>
     <head></head>
@@ -15,10 +67,15 @@
         <label for="idNum2">Número 2</label>
         <input id="idNum2" type="number">
         
-        <button onclick="document.getElementById('labelResultado').innerHTML='Cambio texto'">Sumar</button>
-        <button onclick="document.getElementById">Restar</button>
-        <button onclick="document.getElementById">Multiplicar</button>
-        <button onclick="document.getElementById">Dividir</button>
+        <!--En JS se puede poner los metdos si es en linea-->
+        <button onclick="document.getElementById('labelResultado').style.backgroundColor='red'">JS inline1</button>
+        <button onclick="document.getElementById('labelResultado').style.color='blue'">JS online2</button>
+        
+
+        <button onclick="funsion(sumar)">Sumar</button>
+        <button onclick="funsion(restar)">Restar</button>
+        <button onclick="funsion(multiplicar)">Multiplicar</button>
+        <button onclick="funsion(dividir)">Dividir</button>
         
         <label id="labelResultado" for="">Resultado: </label>
 
