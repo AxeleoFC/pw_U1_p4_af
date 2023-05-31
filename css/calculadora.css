@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-color: dimgray;
+    margin: 5px;
+    padding: 5px;
+    
+    /*background-image: -webkit-image-set("https://eju.tv/wp-content/uploads/2021/06/img_60bfe1181b49f-1100x733.jpg");*/
+}
+button{
+    border: 1px solid black;
+    border-radius: 9px;
+    width: 25px;
+}
+section{
+    text-align: center;
+    border-radius: 4px;
+    color: aliceblue;
+}
+.contenido{
+    display: inline-table;
+    width: 165px;
+    border:3px solid crimson;
+}
+.resultado{
+    display: inline-table;
+    width: 165px;
+    border:3px solid cornflowerblue;
+}
+.boton{
+    display: inline-table;
+    width: 150px;
+    padding: 5px;
+    margin: 2px;
+    border:5px solid coral;
+}
+
+.calcu{
+    display: flexbox;
+    width: 25px;
+    text-align: center;
+    border-radius: 4px;
+}

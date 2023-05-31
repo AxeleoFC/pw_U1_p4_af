@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadora.js">
+
+    </script>
+
+</head>
+<body>
+    <section>
+        <section class="contenido">
+            <label id="resultadoid" for="">-----------</label>
+        </section>
+    </section>
+    <section class="resultado">
+        <label id="numeroid" for=""></label>
+    </section>
+    <section>
+        <section section class="boton">
+            <section>
+                <button onclick="ingresar('numeroid',1)">1</button>
+                <button onclick="ingresar('numeroid',2)">2</button>
+                <button onclick="ingresar('numeroid',3)">3</button>
+                <button class="calcu" onclick="calculo('+')">+</button>
+            </section>
+            <section>
+                <button onclick="ingresar('numeroid',4)">4</button>
+                <button onclick="ingresar('numeroid',5)">5</button>
+                <button onclick="ingresar('numeroid',6)">6</button>
+                <button class="calcu" onclick="calculo('-')">-</button>
+            </section>
+            <section>
+                <button onclick="ingresar('numeroid',7)">7</button>
+                <button onclick="ingresar('numeroid',8)">8</button>
+                <button onclick="ingresar('numeroid',9)">9</button>
+                <button class="calcu" onclick="calculo('x')">x</button>
+            </section>
+            <section>
+                <button onclick="ingresar('numeroid','.')">.</button>
+                <button onclick="ingresar('numeroid',0)">0</button>
+                <button onclick="res()">=</button>
+                <button class="calcu" onclick="calculo('/')">/</button>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
